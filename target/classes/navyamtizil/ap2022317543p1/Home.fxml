@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="455.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="navyamtizil.ap2022317543p1.HomeController">
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="226.0" layoutY="256.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+    <Polygon fill="DODGERBLUE" layoutX="326.0" layoutY="214.0" stroke="BLACK" strokeType="INSIDE">
+        <points>
+            <Double fx:value="-50.0" />
+            <Double fx:value="40.0" />
+            <Double fx:value="50.0" />
+            <Double fx:value="40.0" />
+            <Double fx:value="0.0" />
+            <Double fx:value="-60.0" />
+        </points>
+    </Polygon>
+    <Label fx:id="resultLabel" />
+    <Button layoutX="28.0" layoutY="190.0" mnemonicParsing="false" text="Files.Stick/Slash">
+        <contextMenu>
+            <ContextMenu>
+                <items>
+                    <MenuItem onAction="#Stick" text="Option 1" />
+                    <MenuItem onAction="#Slash" text="Option 2" />
+                </items>
+            </ContextMenu>
+        </contextMenu>
+    </Button>
+
+    <Button layoutX="28.0" layoutY="243.0" mnemonicParsing="false" onAction="#HowToPlay" text="How to Play" />
+
+    <Button layoutX="28.0" layoutY="301.0" mnemonicParsing="false" onAction="#Volume" text="Volume" />
+    <Label fx:id="VolumeLabel" layoutX="31.0" layoutY="327.0" prefHeight="44.0" prefWidth="318.0">
+        <font>
+            <Font size="36.0" />
+        </font></Label>
+
+    <Button layoutX="584.0" layoutY="191.0" mnemonicParsing="false" onAction="#NoADS" text="No ADS" />
+
+    <Button layoutX="584.0" layoutY="243.0" mnemonicParsing="false" onAction="#Skin" text="SKIN" />
+
+    <Button layoutX="584.0" layoutY="301.0" mnemonicParsing="false" onAction="#BuyCheries" text="Buy Cheries" />
+    <Label fx:id="BuyCheriesLabel" layoutX="325.0" layoutY="327.0" prefHeight="44.0" prefWidth="301.0">
+        <font>
+            <Font size="36.0" />
+        </font></Label>
+
+    <Button layoutX="314.0" layoutY="125.0" mnemonicParsing="false" onAction="#Play" text="Play" />
+
+    <Label fx:id="popUpMenuLabel" layoutX="171.0" layoutY="173.0" prefHeight="44.0" prefWidth="364.0">
+        <font>
+            <Font size="36.0" />
+        </font></Label>
+    <Button layoutX="60.0" layoutY="35.0" mnemonicParsing="false" onAction="#ExitGame" text="Exit" />
+
+</AnchorPane>
