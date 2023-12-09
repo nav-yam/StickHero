@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="593.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="navyamtizil.ap2022317543p1.GamePlaySlash">
+    <children>
+      <Circle fill="#04bc14" layoutX="416.0" layoutY="393.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="-52.0" layoutY="393.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="429.0" layoutX="426.0" layoutY="164.0" stroke="BLACK" strokeType="INSIDE" width="41.0" />
+        <Polygon fill="DODGERBLUE" layoutX="94.0" layoutY="353.0" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="-50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-60.0" />
+            </points>
+        </Polygon>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1e1e1e" height="200.0" layoutX="138.0" layoutY="193.0" stroke="BLACK" strokeType="INSIDE" width="8.0" />
+    </children>
+
+</AnchorPane>

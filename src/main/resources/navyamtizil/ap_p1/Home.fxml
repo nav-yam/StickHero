@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="navyamtizil.ap_p1.HomeController">
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="226.0" layoutY="256.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+    <Label fx:id="resultLabel" />
+
+    <Button layoutX="38.0" layoutY="243.0" mnemonicParsing="false" onAction="#HowToPlay" text="How to Play" />
+
+    <Button layoutX="49.0" layoutY="301.0" mnemonicParsing="false" onAction="#Volume" text="Volume" />
+    <Label fx:id="VolumeLabel" layoutX="31.0" layoutY="327.0" prefHeight="44.0" prefWidth="318.0">
+        <font>
+            <Font size="36.0" />
+        </font></Label>
+
+    <Button layoutX="584.0" layoutY="191.0" mnemonicParsing="false" onAction="#NoADS" text="No ADS" />
+
+    <Button layoutX="584.0" layoutY="243.0" mnemonicParsing="false" onAction="#Skin" text="SKIN" />
+
+    <Button layoutX="584.0" layoutY="301.0" mnemonicParsing="false" onAction="#BuyCheries" text="Buy Cheries" />
+
+    <Button layoutX="314.0" layoutY="125.0" mnemonicParsing="false" onAction="#Play" text="Play" />
+
+    <Label fx:id="popUpMenuLabel" layoutX="171.0" layoutY="173.0" prefHeight="44.0" prefWidth="364.0">
+        <font>
+            <Font size="36.0" />
+        </font></Label>
+    <Button layoutX="60.0" layoutY="35.0" mnemonicParsing="false" onAction="#ExitGame" text="Exit" />
+    <Group fx:id="character" layoutX="212.0" layoutY="-179.0">
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="44.0" layoutX="97.0" layoutY="380.0" stroke="TRANSPARENT" strokeType="INSIDE" width="41.0" />
+   <Polygon fill="#ff1f1f" layoutX="89.0" layoutY="369.0" points="7.0, 22.0, 8.0, 18.0, -0.5, 23.70001220703125" stroke="TRANSPARENT" strokeType="INSIDE" />
+   <Circle fill="#bebfbf" layoutX="127.0" layoutY="396.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+   <Rectangle height="7.0" layoutX="97.0" layoutY="387.0" stroke="TRANSPARENT" strokeType="INSIDE" width="41.0" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="15.0" layoutX="105.0" layoutY="420.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="7.0" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="15.0" layoutX="123.0" layoutY="420.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="7.0" />
+   <Polygon fill="WHITE" layoutX="102.0" layoutY="382.0" points="6.573799133300781, 22.271240234375, 29.353729248046875, 35.521514892578125, 35.99998474121094, 28.956207275390625" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+    </Group>
+    <AnchorPane fx:id="premiumWindow" layoutX="143.0" layoutY="71.0" prefHeight="313.0" prefWidth="423.0" style="-fx-background-color: lightgreen;" visible="false">
+        <Text layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buy Premium, Basically No Adds for $6.9 ?" textAlignment="CENTER" wrappingWidth="449.0">
+           <font>
+               <Font size="48.0" />
+           </font>
+        </Text>
+        <Button defaultButton="true" layoutX="70.0" layoutY="214.0" mnemonicParsing="false" onAction="#buyPremium" text="Yes, I am Rich" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="noPremium" layoutX="260.0" layoutY="217.0" mnemonicParsing="false" onAction="#closePremiumWindow" text="No, I have brain" />
+    </AnchorPane>
+   <Text fx:id="premiumLabel" layoutX="476.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BASIC USER (enjoy adds)" textAlignment="RIGHT" wrappingWidth="185.0" />
+   <AnchorPane fx:id="BuyCherriesPane" layoutX="167.0" layoutY="96.0" prefHeight="296.0" prefWidth="373.0" style="-fx-background-color: lightgreen;" visible="false">
+      <children>
+         <Text layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select the suitable amount of cherries $0.5 for each" textAlignment="CENTER" wrappingWidth="372.5">
+            <font>
+               <Font size="40.0" />
+            </font>
+         </Text>
+         <Button fx:id="Buy1" layoutX="43.0" layoutY="167.0" mnemonicParsing="false" onAction="#Buy1" text="1" wrapText="true" />
+         <Button fx:id="cherryBuyButton1" layoutX="43.0" layoutY="232.0" mnemonicParsing="false" onAction="#Buy10" text="10" wrapText="true" />
+         <Button fx:id="cherryBuyButton11" layoutX="149.0" layoutY="167.0" mnemonicParsing="false" onAction="#Buy2" text="2" wrapText="true" />
+         <Button fx:id="cherryBuyButton12" layoutX="149.0" layoutY="232.0" mnemonicParsing="false" onAction="#Buy25" text="25" wrapText="true" />
+         <Button fx:id="cherryBuyButton13" layoutX="268.0" layoutY="167.0" mnemonicParsing="false" onAction="#Buy5" text="5" wrapText="true" />
+         <Button fx:id="cherryBuyButton14" layoutX="268.0" layoutY="232.0" mnemonicParsing="false" onAction="#Buy50" text="50" wrapText="true" />
+         <ImageView fitHeight="56.0" fitWidth="68.0" layoutX="305.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@IMAGES/cherry.png" />
+            </image>
+         </ImageView>
+      </children>
+   </AnchorPane>
+   <Text fx:id="numCherryLabel" layoutX="478.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cherries : 0" textAlignment="RIGHT" wrappingWidth="179.0" />
+   <AnchorPane fx:id="HTPpane" layoutX="156.0" layoutY="40.0" prefHeight="333.0" prefWidth="403.0" style="-fx-background-color: red;" visible="false">
+      <children>
+         <Text layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="How To Play ?" textAlignment="CENTER" wrappingWidth="453.0">
+            <font>
+               <Font size="48.0" />
+            </font>
+         </Text>
+         <Text layoutX="6.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1) Press and hold mouse click to let stick grow." wrappingWidth="421.0" />
+         <Text layoutX="6.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2) If it lands perfectly on red small section, 2 bonus points are awarded." wrappingWidth="442.0" />
+         <Text layoutX="6.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3) Click again to stick up and down, but stay alert of the pillar" wrappingWidth="442.0" />
+         <Text layoutX="8.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4) Challenge your EGO, and try to beat your own High Score" wrappingWidth="442.0" />
+         <Button fx:id="closeHTPpane" layoutX="181.0" layoutY="203.0" mnemonicParsing="false" onAction="#closeHTPpane" text="Got it" />
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="volumePANE" layoutX="17.0" layoutY="337.0" prefHeight="18.0" prefWidth="140.0">
+      <children>
+         <Slider fx:id="volumeSlider" onScroll="#Volume" visible="false" />
+      </children>
+   </AnchorPane>
+   <ImageView fitHeight="31.0" fitWidth="41.0" layoutX="551.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@IMAGES/cherry.png" />
+      </image>
+   </ImageView>
+   <AnchorPane fx:id="skinShop" layoutX="93.0" layoutY="30.0" prefHeight="386.0" prefWidth="522.0" visible="false">
+      <children>
+         <Text layoutX="-3.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buy Skins" textAlignment="CENTER" wrappingWidth="514.8629749177843">
+            <font>
+               <Font size="48.0" />
+            </font>
+         </Text>
+         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="5.0" layoutY="56.0" onMouseClicked="#Skin1" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@IMAGES/hero0.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="220.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@IMAGES/hero1.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="376.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@IMAGES/hero2.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-11.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@IMAGES/hero4.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="224.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@IMAGES/hero7.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="314.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@IMAGES/heroN.png" />
+            </image>
+         </ImageView>
+      </children>
+   </AnchorPane>
+</AnchorPane>
